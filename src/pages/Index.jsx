@@ -64,7 +64,7 @@ const BookDetail = ({ books }) => {
 };
 
 const Index = () => {
-  const [books, setBooks] = useState([]);
+  const [books, setBooks] = useState([{ id: 1, title: "Example Book", content: "" }]);
 
   const handleFileUpload = (newBook) => {
     setBooks([...books, newBook]);
